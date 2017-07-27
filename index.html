@@ -122,6 +122,11 @@ document.getElementById('close').onmousedown = function(e) {
   document.getElementById('info').style.display = 'none';
   return false;
 };
+document.getElementById('close').touchmove = function(e) {
+  e.preventDefault();
+  document.getElementById('info').style.display = 'none';
+  return false;
+};
   
 // settings
  
