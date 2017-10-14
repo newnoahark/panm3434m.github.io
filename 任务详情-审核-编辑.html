@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>任务详情-审核-编辑</title>
+		
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/swiper-3.3.1.min.css" rel="stylesheet">
+		<!-- 调用日历css -->
+		<link href="js/plugins/layui/css/laydate.css" rel="stylesheet">
+		<!-- index -->
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="title">
+			<img onclick="history.go(-1);" src="images/back.png"/>
+			任务详情-审核-编辑
+		</div>
+		<div id="container">
+			<div id="test_edit">
+				<ul class="mt10">
+					<li><a href="">任务类别<span>法制宣传</span></a></li>
+					<li><a href="">任务发起<span>法律援助科 - 詹园</span></a></li>
+					<li><a href="">分管领导<span>向坤</span></a></li>
+					<li><a href="">县市参与<span>否</span></a></li>
+				</ul>
+				<ul class="mt10">
+					<li><a href="javascript:;">开始时间<span class="layui-date2">2017-09-22</span></a></li>
+					<li><a href="javascript:;">完成时限<span class="layui-date2">2017-09-22</span></a></li>
+				</ul>
+				<ul class="mt10">
+					<li><a href="">印证类型</a>
+						<ul class="select_num">
+							<li>工作总结</li>
+							<li>工作总结</li>
+							<li>工作总结</li>
+							<li>工作总结</li>
+							<li>工作总结</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="mt10">
+					<li><a href="">牵头科室<span>办公室</span></a></li>
+				</ul>
+				<ul class="mt10">
+					<li><a href="">协办科室</a>
+						<ul class="select_num">
+							<li>人事警务科</li>
+							<li>州普法办公室</li>
+							<li>法律援助管理科</li>
+							<li>社区矫正管理局</li>
+							<li>法律援助管理科</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="mt10">
+					<li><a href="">提醒季度<span>按周期</span></a></li>
+				</ul>
+			</div>
+			<input class="usual_btn" type="submit" value="保存">
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js"></script>
+	<!-- 调用日历插件 -->
+	<script src="js/plugins/layer/layer.js"></script>
+    <script src="js/plugins/layui/laydate.js"></script>
+	<script src="js/common.js"></script>
+	<!-- 通用js-->
+	<script>
+	$(function(){
+		lay('.layui-date2').each(function(){
+		  laydate.render({
+		    elem: this
+		    ,trigger: 'click'
+		  });
+		}); 
+	})
+	</script>
+</html>

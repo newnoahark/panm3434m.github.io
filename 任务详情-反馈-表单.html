@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>反馈信息</title>
+		
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/swiper-3.3.1.min.css" rel="stylesheet">
+		<!-- index -->
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="title">
+			<img onclick="history.go(-1);" src="images/back.png"/>
+			反馈信息
+			<a href="反馈信息.html">保存</a>
+		</div>
+		<div id="container">
+			<div class="not_pass">
+				<textarea placeholder="请输入您的反馈内容"></textarea>
+				<p class="tips">上传附件 ：</p>
+				<div class="up_info">
+					<ul class="doc">
+						<li><img src="images/doc.png"/>文档名</li>
+						<li><img src="images/doc.png"/>文档名</li>
+						<li class="add"><input type="file"></li>
+					</ul>
+					<ul class="pic">
+						<li><img src="images/pic.png"/>文档名</li>
+						<li><img src="images/pic.png"/>文档名</li>
+						<li class="add"><input type="file"></li>
+					</ul>
+					<ul class="vid">
+						<li><img src="images/video.png"/>文档名</li>
+						<li><img src="images/video.png"/>文档名</li>
+						<li class="add"><input type="file"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<!-- 通用js-->
+	<script>
+	$(function(){
+		
+	})
+	</script>
+</html>

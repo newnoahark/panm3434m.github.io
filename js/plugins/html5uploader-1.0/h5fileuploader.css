@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+.h5-upload-block{width:100%;height:32px;line-height:32px;}
+.h5-upload-fileinfo{width:73%; border:1px solid #14BBC7; height:100%; float:left;-moz-border-radius:2px 0 0 2px;-webkit-border-radius:2px 0 0 2px;
+border-radius:2px 0 0 2px;}
+.h5-sz-b{width:25%; height:100%;}
+.h5-sz-s{padding:0 5px 0 5px; height:25px; line-height:25px;}
+.h5-upload-btn-n{border:1px solid #334dcc;ftext-align:center;color:#ffffff;display:inline-block;-moz-border-radius:2px;
+-webkit-border-radius:2px;border-radius:2px;cursor:pointer; text-decoration: none;}
+.h5-upload-btn-n:link{background-color: #2970a3; border-color:#2970a3;}
+.h5-upload-btn-n:hover{background-color: #24628f; border-color:#24628f;}
+.h5-upload-btn-n:active{background-color: #2970a3; border-color:#2970a3;}
+.h5-upload-button{border:1px solid #14BBC7;float:left;text-align:center;color:#ffffff;-moz-border-radius:0 2px 2px 0;
+-webkit-border-radius:0 2px 2px 0;border-radius:0 2px 2px 0;cursor:pointer; text-decoration: none;}
+.h5-upload-button:link,.h5-upload-button:hover{background-color: #14BBC7; border-color:#14BBC7;}
+.h5-upload-button:active{background-color: #48A7C2; border-color:#48A7C2;}
+.h5-upload-window{width:100%; height:100%; position:absolute; z-index:100;top:0;left:0;}
+.h5-upload-window div{box-sizing:content-box;}
+.h5-upload-window .modal{position:fixed;width:100%; height:100%; background-color:#000;filter:alpha(opacity=50)
+;-moz-opacity:0.50;opacity:0.50;}
+.h5-upload-window .file-window{width:800px; border:4px solid #3c8dde; border-top:0; background-color:#3c8dde;
+position: fixed; top:10px;left:200px; -webkit-box-shadow: 0 4px 11px 0 #e6e6e6; -moz-box-shadow: 0 4px 11px 0 #e6e6e6; box-shadow: 0 4px 11px 0 #e6e6e6;}
+.h5-upload-window img{vertical-align:baseline;}
+.h5-upload-window .menu-bar{width:100%; height:25px;}
+.h5-upload-window .title{padding:0 5px 0 5px; line-height:25px;overflow: hidden;color:#fff;cursor:default}
+.h5-upload-window .tools{position:absolute; right:1px; margin-top:-25px; line-height:25px; padding:0 3px 0 3px; overflow:hidden; text-align:right;
+color:#fff;}
+.h5-upload-window .tools span{height:22px; line-height:22px;display:inline-block;}
+.h5-upload-window .tools .close::before{content:"x";}
+.h5-upload-window .tools .close{width:20px;padding:0 5px 0 5px;text-align:center; cursor: pointer;}
+.h5-no-select{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none;user-select:none;}
+.h5-upload-window .file-window .file-list-area{height:300px; width:100%;border-radius:0 0 3px 3px; overflow-y: scroll; background-color:#fff;}
+.h5-upload-window .file-window .file-list{padding-bottom: 8px;}
+.h5-upload-window .file-window .file-footer{height:35px; line-height:35px; text-align:right;overflow: hidden;
+padding:0 5px 0 5px;}
+.h5-upload-window #h5-upload-image-deal{width:0; height: 0;}
+.h5-upload-window #h5-upload-image-deal canvas{width:0; height: 0;}
+.h5-upload-window .file-window .file-img{background-color: #000;border:5px solid #3399cc;-moz-border-radius:5px;-webkit-border-radius:5px;
+border-radius:5px;position: relative;}
+.file-window .file-list .file-info-block{ margin-left:10px; margin-top: 8px; display:inline-block;}
+.file-window .file-list #h5-upload-delete{background: #fff none repeat scroll 0 0;color:#000;height: 25px;position: absolute;right:0px;
+top: 0px; width: 25px;line-height: 21px;filter:alpha(opacity=70);-moz-opacity:0.70;opacity:0.70; cursor: pointer;border-radius: 13px;
+-moz-border-radius: 13px;-webkit-border-radius: 13px;}
+.file-window .file-list .process-bar{width: 0%; height: 4px; background-color: #00e600; position: absolute; bottom: 0px;border-radius: 1px;
+-moz-border-radius: 1px;-webkit-border-radius: 1px;}
+.h5-upload-window .file-list-area .h5-document-icon{background: rgba(0, 0, 0, 0) url("image/document.png") no-repeat scroll center center;
+display:block; width:100%; height:64px;position: relative;}
+/*css3 loading*/
+@keyframes ball-scale-ripple {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 1; }
+
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7; }
+
+  100% {
+    opacity: 0.0; } }
+
+.ball-scale-ripple > div {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  -webkit-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8);
+          animation: ball-scale-ripple 1s 0s infinite cubic-bezier(.21, .53, .56, .8); }
+/*css3 loading*/
