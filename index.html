@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	    <title>小月博客刮刮卡案例分享</title>
+	    <title>抽奖刮刮乐</title>
 	    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
 	    <style type="text/css">
 			*{
@@ -133,7 +133,7 @@
 				function getRandomNum(lbound, ubound) {
 					return (Math.floor(Math.random() * (ubound - lbound)) + lbound);
 				}
-				var r = getRandomNum(1,100);
+				var r = getRandomNum(1,10);
 				var btn = document.getElementsByClassName("btn");
 				for(var i=0; i<btn.length; i++){
 					btn[i].style.zIndex = '1';
@@ -145,7 +145,7 @@
 				isOk = 0;
 				
 				
-				if(r<t*33){
+				if(r=5){
 					document.getElementById("prompt").innerHTML="恭喜您，中奖了！"
 					var ok =document.getElementById("ok");
 					ok.style.display = "block";
